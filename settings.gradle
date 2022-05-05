@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "GitExample"
-include ':app', ':data', ":domain", ":redux"
+include ':app', ':data', ":domain", ":redux", ":state"
