@@ -1,6 +1,6 @@
 plugins {
 	kotlin("multiplatform")
-	kotlin("plugin.serialization") version "1.6.10"
+	kotlin("plugin.serialization") version "1.6.20"
 	id("com.codingfeline.buildkonfig")
 	id("io.realm.kotlin") version "0.10.2"
 }
@@ -8,7 +8,7 @@ plugins {
 
 kotlin {
 	jvm()
-
+	ios()
 	sourceSets {
 		val commonMain by getting {
 			dependencies {
@@ -99,4 +99,10 @@ buildkonfig {
 	}
 
 
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+	kotlinOptions {
+		jvmTarget = "1.8"
+	}
 }

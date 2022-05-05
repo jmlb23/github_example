@@ -4,7 +4,7 @@ plugins {
 
 kotlin {
 	jvm()
-
+	ios()
 	sourceSets {
 		val commonMain by getting {
 			dependencies {
@@ -19,5 +19,11 @@ kotlin {
 				implementation(kotlin("test-annotations-common"))
 			}
 		}
+	}
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+	kotlinOptions {
+		jvmTarget = "1.8"
 	}
 }
