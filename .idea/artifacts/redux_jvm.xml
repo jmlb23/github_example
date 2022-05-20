@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="redux-jvm">
+    <output-path>$PROJECT_DIR$/redux/build/libs</output-path>
+    <root id="archive" name="redux-jvm.jar">
+      <element id="module-output" name="GitExample.redux.jvmMain" />
+    </root>
+  </artifact>
+</component>

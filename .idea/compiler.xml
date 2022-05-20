@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="GitExample.data.commonMain" target="1.8" />
+      <module name="GitExample.data.commonTest" target="1.8" />
+      <module name="GitExample.data.jvmMain" target="1.8" />
+      <module name="GitExample.data.jvmTest" target="1.8" />
+      <module name="GitExample.domain.commonMain" target="1.8" />
+      <module name="GitExample.domain.commonTest" target="1.8" />
+      <module name="GitExample.domain.jvmMain" target="1.8" />
+      <module name="GitExample.domain.jvmTest" target="1.8" />
+      <module name="GitExample.redux.commonMain" target="1.8" />
+      <module name="GitExample.redux.commonTest" target="1.8" />
+      <module name="GitExample.redux.jvmMain" target="1.8" />
+      <module name="GitExample.redux.jvmTest" target="1.8" />
+      <module name="GitExample.state.commonMain" target="1.8" />
+      <module name="GitExample.state.commonTest" target="1.8" />
+      <module name="GitExample.state.jvmMain" target="1.8" />
+      <module name="GitExample.state.jvmTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

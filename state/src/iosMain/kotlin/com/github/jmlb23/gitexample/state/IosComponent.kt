@@ -2,6 +2,7 @@ package com.github.jmlb23.gitexample.state
 
 import com.github.jmlb23.gitexample.data.api.oauth.Oauth
 import com.github.jmlb23.gitexample.diData
+import com.github.jmlb23.gitexample.redux.createStore
 import com.russhwolf.settings.Settings
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
@@ -12,6 +13,7 @@ class IosComponent : KoinComponent {
     fun preferences(): Settings = get()
     fun oauth(): Oauth = get()
     fun environment(): Enviroment = get()
+    fun redux() = store(get())
 }
 
 private fun koin(appDeclaration: KoinAppDeclaration = {}) = startKoin {

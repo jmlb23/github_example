@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="state-jvm">
+    <output-path>$PROJECT_DIR$/state/build/libs</output-path>
+    <root id="archive" name="state-jvm.jar">
+      <element id="module-output" name="GitExample.state.jvmMain" />
+    </root>
+  </artifact>
+</component>
