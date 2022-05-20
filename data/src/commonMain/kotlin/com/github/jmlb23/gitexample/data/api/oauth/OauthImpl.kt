@@ -2,6 +2,7 @@ package com.github.jmlb23.gitexample.data.api.oauth
 
 import com.github.jmlb23.gitexample.BuildKonfig
 import io.ktor.client.HttpClient
+import io.ktor.client.call.*
 import io.ktor.client.request.get
 import io.ktor.http.Url
 import io.ktor.util.Digest
@@ -45,7 +46,7 @@ internal class OauthImpl(
 		state: String
 	): Result<String?> {
 		return if (state == this.state)
-			httpClient.runCatching { JsonObject(get("${BuildKonfig.TOKEN_URI}/?client_id=${BuildKonfig.CLIENT_ID}&client_secret=${BuildKonfig.SECRET}&code=$code&redirect_uri=${BuildKonfig.REDIR_URI}"))["access_token"]?.jsonPrimitive?.content }
+			httpClient.runCatching { JsonObject(get("${BuildKonfig.TOKEN_URI}/?client_id=${BuildKonfig.CLIENT_ID}&client_secret=${BuildKonfig.SECRET}&code=$code&redirect_uri=${BuildKonfig.REDIR_URI}").body())["access_token"]?.jsonPrimitive?.content }
 		else Result.failure(IllegalArgumentException("State not valid"))
 	}
 

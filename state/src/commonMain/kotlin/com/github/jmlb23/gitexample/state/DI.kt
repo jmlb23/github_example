@@ -1,5 +1,6 @@
 package com.github.jmlb23.gitexample.state
 
+import org.koin.core.component.get
 import org.koin.core.context.loadKoinModules
 import org.koin.core.qualifier.qualifier
 import org.koin.dsl.module
@@ -15,6 +16,10 @@ val diStatePartial = module {
             get(qualifier("RemoveRepositoriesFavoriteUseCase")),
             get(qualifier("AddRepositoriesFavoriteUseCase"))
         )
+    }
+
+    single {
+        store(get())
     }
 
 }
