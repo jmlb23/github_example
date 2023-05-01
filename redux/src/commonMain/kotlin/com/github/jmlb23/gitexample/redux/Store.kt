@@ -1,5 +1,6 @@
 package com.github.jmlb23.gitexample.redux
 
+import co.touchlab.stately.collections.SharedHashMap
 import kotlinx.atomicfu.atomic
 import kotlin.random.Random
 
@@ -12,7 +13,7 @@ fun <S : Any, A : Any, E> createStore(
 	object : Store<S, A, E> {
 
 		private val _state = atomic(initalState)
-		private val subscriptions = mutableMapOf<Subscription, (S) -> Unit>()
+		private val subscriptions = SharedHashMap<Subscription, (S) -> Unit>()
 
 		private val _dispatch: Dispatch<A> by lazy {
 			middleware.reversed().fold({ x -> defaultDispatch(x) }) { acc, next ->

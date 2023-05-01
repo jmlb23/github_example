@@ -36,18 +36,18 @@ import com.github.jmlb23.gitexample.ui.theme.CustomBlue
 import com.github.jmlb23.gitexample.ui.theme.GitExampleTheme
 import com.russhwolf.settings.AndroidSettings
 import com.russhwolf.settings.addStringListener
-import com.russhwolf.settings.get
+import com.russhwolf.settings.addStringOrNullListener
 
 @Composable
 fun rememberLogin(): State<Boolean> {
 	val preferences = LocalEncryptedPreferences.current
 	return produceState(initialValue = false, preferences, producer = {
 		preferences.let { it as? AndroidSettings }?.let {
-			it["token", ""].takeIf { it.isNotEmpty() }?.let {
+			it.getStringOrNull("token")?.takeIf { it.isNotEmpty() }?.let {
 				value = it.isNotEmpty()
 			}
-			it.addStringListener("token", "") {
-				value = it.isNotEmpty()
+			it.addStringOrNullListener("token") {
+				value = it.orEmpty().isNotEmpty()
 			}
 		}
 	})

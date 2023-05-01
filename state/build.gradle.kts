@@ -12,21 +12,15 @@ kotlin {
     }
 
     android()
-    ios {
-        binaries {
-            framework {
-                baseName = "State"
-            }
-        }
-    }
+    ios()
     sourceSets {
         val commonMain by getting {
             dependencies {
                 api(project(":redux"))
                 api(project(":domain"))
-                api(project(":data"))
                 implementation(kotlin("stdlib"))
-                implementation("io.insert-koin:koin-core:3.2.0-beta-1")
+                implementation("io.insert-koin:koin-core:3.2.0")
+                implementation("com.russhwolf:multiplatform-settings-no-arg:0.9")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1-native-mt")
             }
         }
@@ -42,7 +36,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 dependsOn(commonMain)
-                implementation("io.insert-koin:koin-android:3.2.0-beta-1")
+                implementation("io.insert-koin:koin-android:3.2.0")
                 implementation("androidx.security:security-crypto:1.0.0")
             }
         }
@@ -50,7 +44,12 @@ kotlin {
         val iosMain by getting {
             dependencies {
                 dependsOn(commonMain)
-                implementation("io.insert-koin:koin-core:3.2.0-beta-1")
+            }
+        }
+
+        val iosTest by getting {
+            dependencies {
+                dependsOn(commonTest)
             }
         }
     }
@@ -63,4 +62,5 @@ android {
         minSdk = 21
         targetSdk = 31
     }
+    namespace = "com.github.jmlb23.gitexample.state"
 }

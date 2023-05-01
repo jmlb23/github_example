@@ -1,0 +1,30 @@
+name: Github # The name of the App
+options: # Some general settings for the project
+  createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+  indentWidth: 2 # indent by 2 spaces
+  tabWidth: 2 # a tab is 2 spaces
+  bundleIdPrefix: "com.github.jmlb23"
+packages:
+    Kingfisher:
+      url: https://github.com/onevcat/Kingfisher.git
+      from: 6.2.1
+targets: # The List of our targets
+  Github:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    preBuildScripts:
+      - script: cd "$SRCROOT/../.." ; ./gradlew :di:embedAndSignAppleFrameworkForXcode
+        name: Gradle
+    sources:
+      - path: Github
+    settings:
+      configs:
+        debug:
+          FRAMEWORK_SEARCH_PATHS: "$SRCROOT/../../di/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"
+          OTHER_LDFLAGS: "$(inherited) -framework Shared"
+        release:
+          FRAMEWORK_SEARCH_PATHS: "$SRCROOT/../../di/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"
+    dependencies:
+        - package: Kingfisher
+        - sdk: SwiftUI.framework

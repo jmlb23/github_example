@@ -9,12 +9,12 @@ import org.koin.dsl.module
 
 actual val diPlatform
     get() = module {
-        single {
+        single<Settings> {
             object : Settings.Factory {
                 private val keyGenParameterSpec = MasterKeys.AES256_GCM_SPEC
                 private val mainKeyAlias = MasterKeys.getOrCreate(keyGenParameterSpec)
 
-                override fun create(name: String?): Settings {
+                override fun create(name: String?): AndroidSettings {
                     val preferencesName = name ?: "enc_preferences"
 
                     return AndroidSettings(

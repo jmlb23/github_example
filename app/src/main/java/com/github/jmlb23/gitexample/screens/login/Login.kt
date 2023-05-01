@@ -47,9 +47,7 @@ fun Login() {
 				)
 				Column(modifier = Modifier.padding(10.dp)) {
 					Button(onClick = {
-						scope.launch {
-							context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(oauth.getUrlLaunchFlow())))
-						}
+						context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(oauth.getUrlLaunchFlow())))
 					}, modifier = Modifier.fillMaxWidth()) {
 						Text(text = "Sign in with github", color = MaterialTheme.colors.secondary)
 					}

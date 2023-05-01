@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b18a1e7-efea-4cb6-8fa6-8816bc0c579b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/ShadowImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework.dSYM/Contents/Resources/DWARF/Shared" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework/Headers/Shared.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/bin/iosX64/debugFramework/Shared.framework/Shared" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/build/classes/kotlin/iosX64/main/klib/di.klib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/src/commonMain/kotlin/com/github/jmlb23/gitexample/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../di/src/commonMain/kotlin/com/github/jmlb23/gitexample/di/CommonComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github.xcodeproj/project.xcworkspace/xcuserdata/jesus.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github.xcodeproj/xcuserdata/jesus.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Assets.xcassets/AccentColor.colorset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/ContentView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/EnvDependecies.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/GithubApp.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Home/HomeItemView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Home/HomeView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Home/SearchView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Login/LoginView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Notifications/NotificationsView.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/Github/Preview Content/Preview Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/GithubTests/GithubTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/GithubUITests/GithubUITests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/GithubUITests/GithubUITestsLaunchTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../state/build/classes/kotlin/iosX64/main/klib/state.klib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../state/src/iosTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/CompositionalsLocals.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/CompositionalsLocals.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/MainApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/screens/notifications/NotificationItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../app/src/main/java/com/github/jmlb23/gitexample/screens/notifications/NotificationItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/DI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../di/src/commonMain/kotlin/com/github/jmlb23/gitexample/di/DI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/data/api/oauth/Oauth.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/data/api/oauth/Oauth.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/data/api/oauth/OauthImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/src/commonMain/kotlin/com/github/jmlb23/gitexample/data/api/oauth/OauthImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domain/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../domain/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.xcworkspace/xcuserdata/jesus.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/project.xcworkspace/xcuserdata/jesus.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/xcshareddata/xcschemes/GithubExample.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/xcuserdata/jesus.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample.xcodeproj/xcuserdata/jesus.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Assets.xcassets/AccentColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/ContentView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/GithubExampleApp.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Home/Home.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Home/HomeItem.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Home/SearchView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExample/Preview Content/Preview Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExampleTests/GithubExampleTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExampleUITests/GithubExampleUITests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubExampleUITests/GithubExampleUITestsLaunchTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redux/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../redux/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redux/src/commonMain/kotlin/com/github/jmlb23/gitexample/redux/ReduxApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../redux/src/commonMain/kotlin/com/github/jmlb23/gitexample/redux/ReduxApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redux/src/commonMain/kotlin/com/github/jmlb23/gitexample/redux/Store.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../redux/src/commonMain/kotlin/com/github/jmlb23/gitexample/redux/Store.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redux/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../redux/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../state/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/androidMain/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../state/src/androidMain/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/androidMain/kotlin/com/github/jmlb23/gitexample/state/Setting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../state/src/androidMain/kotlin/com/github/jmlb23/gitexample/state/Setting.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/commonMain/kotlin/com/github/jmlb23/gitexample/state/DI.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../state/src/commonTest/kotlin/com/github/jmlb23/gitexample/GithubApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/iosMain/kotlin/com/github/jmlb23/gitexample/state/IosComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../state/src/iosMain/kotlin/com/github/jmlb23/gitexample/state/Setting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../state/src/iosMain/kotlin/com/github/jmlb23/gitexample/state/Setting.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="AppCode" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="1.1" />
+  </component>
+  <component name="ProjectId" id="29fZRMu5lcZo5UCo5NDaH1xKctH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b18a1e7-efea-4cb6-8fa6-8816bc0c579b" name="Changes" comment="" />
+      <created>1653506092857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653506092857</updated>
+      <workItem from="1653506094559" duration="32000" />
+    </task>
+    <servers />
+  </component>
+</project>

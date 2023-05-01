@@ -127,7 +127,7 @@ fun NotificationItem(notification: NotificationVO) {
 
 private fun toHours(time: String): String =
 	((System.currentTimeMillis() -
-			SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(time).time)).let {
+			(SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(time)?.time ?: 0))).let {
 		"${it / 3600000} h ${(it % 3600) / 60} m"
 	}
 

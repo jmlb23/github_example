@@ -14,7 +14,7 @@ interface Store<S, A, E> {
 
 }
 
-data class Subscription(val hash: String)
+data class Subscription(private val hash: String)
 
 typealias Dispatch<A> = suspend (A) -> Unit
 

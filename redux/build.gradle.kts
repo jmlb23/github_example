@@ -9,6 +9,8 @@ kotlin {
 		val commonMain by getting {
 			dependencies {
 				implementation("org.jetbrains.kotlinx:atomicfu:0.17.2")
+				implementation("co.touchlab:stately-collections:1.2.0")
+				implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1-native-mt")
 				implementation(kotlin("stdlib"))
 			}
 		}

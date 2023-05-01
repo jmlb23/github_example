@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
 		val state = intent?.data?.getQueryParameter("state")
 		val code = intent?.data?.getQueryParameter("code")
 		lifecycleScope.launch(Dispatchers.IO) {
-			oauth.requestToken(code = code.orEmpty(), state = state.orEmpty()).fold({
+			runCatching{oauth.requestToken(code = code.orEmpty(), state = state.orEmpty())}.fold({
 				preferences.putString("token", it.orEmpty())
 			}, {
 				Log.e("ERROR", it.message, it)

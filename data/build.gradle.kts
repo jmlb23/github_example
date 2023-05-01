@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.6.10"
+    kotlin("plugin.serialization") version "1.6.21"
     id("com.codingfeline.buildkonfig")
     id("io.realm.kotlin") version "0.10.2"
 }
@@ -18,9 +18,8 @@ kotlin {
                 implementation("io.ktor:ktor-client-serialization:2.0.0")
                 implementation("io.ktor:ktor-client-content-negotiation:2.0.0")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
-                implementation("io.ktor:ktor-utils:2.0.0")
+                implementation("com.soywiz.korlibs.krypto:krypto:2.2.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1-native-mt")
-                implementation("io.insert-koin:koin-core:3.2.0-beta-1")
                 api("com.russhwolf:multiplatform-settings-no-arg:0.8.1")
                 implementation("io.realm.kotlin:library-base:0.10.2")
                 implementation(kotlin("stdlib"))
@@ -34,6 +33,13 @@ kotlin {
                 implementation(kotlin("test"))
                 implementation(kotlin("test-annotations-common"))
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
+            }
+        }
+
+        val iosMain by getting{
+            dependencies {
+                dependsOn(commonMain)
+                implementation("io.ktor:ktor-client-darwin:2.0.0")
             }
         }
     }
