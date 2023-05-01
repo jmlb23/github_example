@@ -1,5 +1,6 @@
 package com.github.jmlb23.gitexample.di
 
+import co.touchlab.kermit.Kermit
 import com.github.jmlb23.gitexample.data.api.GithubApi
 import com.github.jmlb23.gitexample.data.api.oauth.Oauth
 import com.github.jmlb23.gitexample.data.db.RepositoryFavoriteId
@@ -8,10 +9,10 @@ import com.github.jmlb23.gitexample.domain.RepoFavorite
 import com.github.jmlb23.gitexample.domain.User
 import com.github.jmlb23.gitexample.getGithubApi
 import com.github.jmlb23.gitexample.getOauthApi
+import com.github.jmlb23.gitexample.ktorEngine
 import com.github.jmlb23.gitexample.repo.impl.*
 import com.github.jmlb23.gitexample.repository.Repository
 import com.github.jmlb23.gitexample.state.Enviroment
-import com.github.jmlb23.gitexample.state.diPlatform
 import com.github.jmlb23.gitexample.state.store
 import com.github.jmlb23.gitexample.usecase.*
 import com.russhwolf.settings.Settings
@@ -31,9 +32,13 @@ import org.koin.core.context.loadKoinModules
 import org.koin.core.qualifier.qualifier
 import org.koin.dsl.module
 
-val diData = module {
+val di = module {
     single {
-        HttpClient(CIO) {
+        Kermit()
+    }
+
+    single {
+        HttpClient(ktorEngine()) {
             install(ContentNegotiation) {
                 json(Json {
                     prettyPrint = true
@@ -43,8 +48,10 @@ val diData = module {
                 })
             }
             ResponseObserver {
-                println(it.call.response.request.headers)
-                println(it.call.response.request.url)
+                get<Kermit>().let { logger ->
+                    logger.d { it.call.response.request.headers.toString() }
+                    logger.d { it.call.response.request.url.toString() }
+                }
             }
             defaultRequest {
                 header("Authorization", "Bearer ${get<Settings>().getString("token")}")
@@ -136,9 +143,7 @@ val diData = module {
             get(qualifier("RepoFavorite"))
         )
     }
-}
 
-val diStatePartial = module {
     single {
         Enviroment(
             get(qualifier("GetNotificationsUseCase")),
@@ -154,9 +159,4 @@ val diStatePartial = module {
     single {
         store(get())
     }
-
-}
-
-val diState = module {
-    loadKoinModules(listOf(diStatePartial, diPlatform))
 }

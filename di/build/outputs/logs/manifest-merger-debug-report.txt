@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml:2:13-83
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml:2:13-83
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml:2:13-83
+	package
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+		ADDED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml:2:13-83
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+	xmlns:android
+		ADDED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml:2:23-81
+uses-sdk
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml reason: use-sdk injection requested
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+		ADDED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+	android:minSdkVersion
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+		ADDED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
+		INJECTED from /Users/jesus/Projects/github_example/di/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15412828035980062658.xml
